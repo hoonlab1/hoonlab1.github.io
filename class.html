@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>수업시간표</title>
+<style>
+		body{background-color:  aliceblue; }
+		ul strong {   color : dodgerblue;  }
+		/*li:hover{  background : yellowgreen; }*/
+		.navi{
+			list-style:  none;
+			float: right;
+			blackground-color:  #ffffff;
+			width: 400px;
+			height: 100px;
+		}
+		.navi_li{
+			float: left;
+			margin: 5px 20px 5px 20px;
+			color:  #000000;
+			font-weight: bold;
+			line-height: 70px;
+		}
+		.logo{
+			/*float: left;*/
+		}
+		.footer{
+			position: fixed;
+			bottom: 0px;
+			text-align: center;
+			width: 1000px;
+			height: 50px;
+		}
+		/*a:link{text-decoration: none; color: #000000}
+		a:visited{text-decoration: none; color: #000000}
+		a:active{text-decoration: none; color: #000000}
+		a:hover{text-decoration: none; color: #000000} */
+		table{
+			border-collapse: collapse;
+			border: 1px solid black;
+			text-align: ;
+			width: 100%;
+		}
+		td, th{
+			text-align: center;
+			padding: 5px;
+			height: 20px;
+			width: 100px;
+			border: 1px solid black;
+		}
+		thead, tfoot{
+			background: darkgray;
+			text-align: center;
+			color: yellow;
+		}
+		tbody tr:nth-child(even){
+			background: aliceblue;
+		}
+		tbody tr:hover{
+			background: pink;
+		}
+
+</style>
+</head>
+<body>
+	<div class="logo">
+				<img src="style.png" style="height: 50px">
+			</div>
+			<ul class="navi">
+				<li class="navi_li"><a href="index.html">home| </a></li>
+				<li class="navi_li"><a href="introduce.html">introduce| </a></li>
+				<li class="navi_li"><a href="class.html">class| </a></li>
+				<li class="navi_li"><a href="contact.html">contact| </a></li>
+			</ul>
+		<div style="position: relative; top: 50px; text-align: center;">
+				<span style="font-weight: bold; font-size: 20px; display: block">
+				2021학년 2학기 시간표 입니다. </span>
+				<img src="logo.jpg" style="width: 500px; height: 100px; margin-top: 10px;">
+			</div>
+		</div>
+		<div class="footer">
+			<span style="font-size:15px;">창원대학교 인공지능빅데이터교육전공</span>
+		</div>
+	<h1>시간표</h1>
+	<hr>
+<table>
+	<thead>
+
+		<tr><th>교시</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</tr>
+	</thead>
+	<tfoot>
+		<tr><th>총 시수</th><th>2시간</th><th>0시간</th><th>2시간</th><th>7시간</th><th>6시간</th></tr>
+	</tfoot>
+	<tbody>
+		<tr><td>1</td><td>기소(3-12)</td><td></td><td></td><td>기소(3-10)</td><td>기소(3-12)</td></tr>
+		<tr><td>2</td><td>전이(3-12)</td><td></td><td></td><td>기소(3-10)</td><td>기소(3-12)</td></tr>
+		<tr><td>3</td><td></td><td></td><td></td><td>기소(3-10)</td><td>기소(3-12)</td></tr>
+		<tr><td>4</td><td></td><td></td><td>진로(1-9)</td><td>정통(3-11)</td><td>기소(3-9)</td></tr>
+		<tr><td>5</td><td></td><td></td><td>진로(1-10)</td><td>기소(3-11)</td><td>기소(3-9)</td></tr>
+		<tr><td>6</td><td></td><td></td><td></td><td>기소(3-11)</td><td>기소(3-9)</td></tr>
+		<tr><td>7</td><td></td><td></td><td></td><td>기소(3-11)</td><td></td></tr>
+	</tbody>
+</table>
+<div style="position: relative; top: 50px; text-align: center;">
+				<span style="font-weight: bold; font-size: 30px; display: block">
+				오늘의 명언 </span>
+				<img src="sangsang.png" style="width: 500px; height: 200px; margin-top: 10px;">
+<script>
+	var a = prompt("2021학년도 2학기 시간표입니다. 원하는 요일을 입력하세요(ex) 월 )","");
+if(a == "월"){
+	alert("월요일은 수업이 2시간입니다");
+	document.write("월요일은 기계소프트웨어개발, 전자기계이론");
+}
+else if(a == "화"){
+	alert("화요일은 수업이 없습니다^^");
+	document.write("화요일은 공강");
+}
+else if(a == "수"){
+	alert("수요일은 수업이 2시간, 동아리 1시간 입니다");
+	document.write("수요일은 진로2시간, 동아리1시간");
+}
+else if(a=="목"){
+	alert("목요일은 수업이 7시간 입니다");
+	document.write("목요일은 기계소프트웨어 6시간, 정통 1시간");
+}
+else if(a=="금"){
+	alert("금요일은 수업이 6시간 입니다");
+	document.write("금요일은 기계소프트웨어 5시간, 정통1시간");
+}
+else if(a=="토"){
+	alert("토요일은 휴일");
+	document.write("토요일은 휴일");
+}
+else if(a=="일"){
+	alert("일요일은 휴일");
+	document.write("일요일은 휴일");
+}
+</script>
+</body>
+</html>
+
+
